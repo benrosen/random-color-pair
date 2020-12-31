@@ -15,7 +15,9 @@
   "author": "Ben Rosen",
   "license": "CC0",
   "dependencies": {
-    "jest": "^26.6.3",
     "randomcolor": "^0.6.2"
+  },
+  "devDependencies": {
+    "jest": "^26.6.3"
   }
 }
