@@ -1,4 +1,4 @@
-const randomColor = require("randomcolor");
+const randomColor = require('randomcolor')
 
 /**
  * Generate two random colors: one darker and one lighter.
@@ -7,16 +7,16 @@ const randomColor = require("randomcolor");
  * @function
  * @returns {ColorPair} A foreground color and a background color.
  */
-module.exports = function getColorPair() {
-  const isForegroundDark = Math.random() < 0.5;
+module.exports = function getColorPair () {
+  const isForegroundDark = Math.random() < 0.5
   const foregroundColor = randomColor({
-    luminosity: isForegroundDark ? "dark" : "light",
-  });
+    luminosity: isForegroundDark ? 'dark' : 'light'
+  })
   const backgroundColor = randomColor({
-    luminosity: isForegroundDark ? "light" : "dark",
-  });
-  return [foregroundColor, backgroundColor];
-};
+    luminosity: isForegroundDark ? 'light' : 'dark'
+  })
+  return [foregroundColor, backgroundColor]
+}
 
 /**
  * @typedef ColorPair
