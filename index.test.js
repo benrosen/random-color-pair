@@ -8,17 +8,19 @@ describe("The getColorPair function", () => {
       expect(response).toBeDefined();
     });
 
-    describe("foreground color", () => {
-      const { foregroundColor } = response;
+    it("should contain exactly two items.", () => {
+      expect(response).toHaveLength(2);
+    });
 
+    const [foregroundColor, backgroundColor] = response;
+
+    describe("foreground color", () => {
       it("should be defined.", () => {
         expect(foregroundColor).toBeDefined();
       });
     });
 
     describe("background color", () => {
-      const { backgroundColor } = response;
-
       it("should be defined.", () => {
         expect(backgroundColor).toBeDefined();
       });
