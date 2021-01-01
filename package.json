@@ -3,6 +3,7 @@
   "version": "1.0.3",
   "description": "Generate two random colors: one darker and one lighter.",
   "main": "index.js",
+  "repository": "benrosen/random-color-pair",
   "scripts": {
     "patch": "npm version patch -m 'patch %s'",
     "test": "run-s test:unit test:lint",
